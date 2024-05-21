@@ -36,7 +36,22 @@ app.listen(port, () => {
 });
 
 
-const statusMessages = ["PLAYING","MUSIC"];
+let status = [
+  {
+    name: 'HQMT',
+    type: ActivityType.Streaming,
+    url: 'https://discord.gg/p8Ctsm4z6R',
+  },
+  {
+    name: 'HQMT Gang 💎',
+    type: ActivityType.Watching,
+  },
+  {
+    name: 'HQMT Team ✅',
+    type: ActivityType.Listening,
+  },
+];
+
 
 
 let currentIndex = 0;
@@ -97,7 +112,8 @@ client.once('ready', () => {
   updateStatusAndSendMessages();
 
   setInterval(() => {
-    updateStatusAndSendMessages();
+    let random = Math.floor(Math.random() * status.length);
+    client.user.setActivity(status[random]);
   }, 10000);
 });
 
