@@ -74,7 +74,6 @@ function updateStatusAndSendMessages() {
 
   client.user.setPresence({
     activities: [{ name: currentStatus, type: ActivityType.Playing}],
-       status: 'dnd',
   });
 
   
