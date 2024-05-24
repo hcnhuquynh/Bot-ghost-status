@@ -36,7 +36,7 @@ app.listen(port, () => {
 });
 
 
-const statusMessages = ["<:a_:1221342516658307145><:t_:1221342519443591219>","HQMT <a:hg_tick:1213677837576445962>"];
+const statusMessages = ["✅","HQMT <a:hg_tick:1213677837576445962>"];
 
 
 let currentIndex = 0;
