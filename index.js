@@ -50,10 +50,11 @@ async function login() {
 function updateStatusAndSendMessages() {
   const currentStatus = statusMessages[currentIndex];
 
-  client.user.setPresence({
-    activities: [{ name: currentStatus, type: ActivityType.PLAYING }],
-    status: 'dnd',
-  });
+ bot.status({
+  text: "Watch it",
+  type: "STREAMING",
+  url: "https://www.youtube.com/c/BeingYT",
+});
 
   const textChannel = client.channels.cache.get(channelId);
   if (textChannel instanceof TextChannel) {
