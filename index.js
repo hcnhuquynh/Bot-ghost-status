@@ -33,7 +33,7 @@ app.listen(port, () => {
   console.log(`🔗 Powered By RTX`);
 });
 
-const statusMessages = ["Power By HQMT ✅"];
+const statusMessages = ["Power By HQMT ✅", "HC Gang 💎"];
 let currentIndex = 0;
 const channelId = ''; // Add your channel ID if you want to send messages to a specific channel
 
